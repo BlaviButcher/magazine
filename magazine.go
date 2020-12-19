@@ -27,3 +27,9 @@ func DefaultSubscriber(name string) *Subscriber {
 func ApplyDiscount(s *Subscriber) {
 	s.Rate = 4.99
 }
+
+// Employee holds a name string value and salary float64 value
+type Employee struct {
+	Name string
+	Salary float64
+}
