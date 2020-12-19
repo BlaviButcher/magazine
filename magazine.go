@@ -11,9 +11,9 @@ type Subscriber struct {
 
 // PrintInfo will display all info of the subscriber on seperate lines.
 func PrintInfo(s *Subscriber) {
-	fmt.Println("Name" + s.name)
-	fmt.Println(s.rate)
-	fmt.Println(s.active)
+	fmt.Printf("Name: %s\n", s.name)
+	fmt.Printf("Rate: %0.2f\n", s.rate)
+	fmt.Printf("Active: %t\n", s.active)
 }
 // DefaultSubscriber takes a string name and creates a subscriber struct using that name and default everything else.
 func DefaultSubscriber(name string) *Subscriber {
