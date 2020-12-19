@@ -7,6 +7,7 @@ type Subscriber struct {
 	Name   string
 	Rate   float64
 	Active bool
+	Address
 }
 
 // PrintInfo will display all info of the subscriber on seperate lines.
@@ -32,4 +33,16 @@ func ApplyDiscount(s *Subscriber) {
 type Employee struct {
 	Name string
 	Salary float64
+	// use annonymous address so that we don't need to reference variable. This makes access less tedious
+	Address
 }
+
+// Address holds the values that build up a home address
+type Address struct {
+	Street string
+	City string
+	State string
+	PostalCode string
+}
+
+
